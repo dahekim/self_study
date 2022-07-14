@@ -15,6 +15,9 @@ function solution(phone_number) {
 }
 
 function solution(phone_number) {
+    
     let lastNum = phone_number.slice(-4);
+    console.log(phone_number) // slice() 사용으로 phone_number 자체에 변화는 없다!
     return lastNum.padStart(phone_number.length, "*");
+    // 주어진 phone_number의 길이만큼의 문자열을 반환, 전화번호 뒷 4자리(lastNum)를 제외한 나머지는 *로 채워 넣어진다!
 }
