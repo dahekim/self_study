@@ -15,7 +15,6 @@ function solution(phone_number) {
 }
 
 function solution(phone_number) {
-    
     let lastNum = phone_number.slice(-4);
     console.log(phone_number) // slice() 사용으로 phone_number 자체에 변화는 없다!
     return lastNum.padStart(phone_number.length, "*");
