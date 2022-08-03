@@ -14,7 +14,7 @@ function solution(s){
     
     // p와 y가 하나도 없는 경우
     if(arr.includes('p') === false
-       && arr.includes('y') === false) {
+    && arr.includes('y') === false) {
         return true;
     }
     
@@ -22,11 +22,11 @@ function solution(s){
     if(arr.includes('p') || arr.includes('y')){
         for(let i = 0; i < arr.length; i++){
             if(arr[i] === 'p'){
-                pNums += 1;
+                pNums++;
             }
             
             if(arr[i] === 'y'){
-                yNums += 1;
+                yNums++;
             }
         }
         console.log(pNums, yNums)
