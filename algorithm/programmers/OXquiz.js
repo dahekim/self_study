@@ -11,6 +11,8 @@
 // - [연산자]는 + 와 - 중 하나입니다.
 
 function solution(quiz) {
+    // 1. eval() 함수를 사용한 풀이
+    // 근데 이 함수는 보안 이슈가 있다고 해서 다른 풀이로도 다시 풀어볼 예정
     let answer = [];
     for(let i = 0; i<quiz.length; i++){
         const arr = quiz[i].split("=");
